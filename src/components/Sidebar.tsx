@@ -5,14 +5,14 @@ import profile from "../assets/profile-2user.png";
 import box from "../assets/box.png";
 import frame from "../assets/discount-shape.png";
 import info from "../assets/info-circle.png";
-import light from "../assets/brightness.png";
+import light from "../assets/Frame 427319676.svg";
 import moon from "../assets/moon 1.png";
 import arrowright from "../assets/arrow-right.png";
 import setting from "../assets/setting-2.png";
 import logout from "../assets/logout.png";
 const Sidebar = () => {
   return (
-    <div className="p-4  flex flex-col gap-2 ">
+    <div className="p-4  flex flex-col gap-8  bg-white">
       <img src={logo} alt="logo" className="w-8" />
       <img src={catergory} alt="logo" className="w-8" />
       <img src={trend} alt="logo" className="w-8" />
