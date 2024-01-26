@@ -4,8 +4,8 @@ import avatar from "../assets/avatar.png";
 import search from "../assets/Icon - Search.png";
 const Header = () => {
   return (
-    <>
-      <div className="py-4 flex items-center justify-between container mx-auto bg-white">
+    <div className=" ml-10  bg-white fixed w-full top-0  z-10 pr-10">
+      <div className="py-2 flex items-center justify-between container  mx-auto">
         <h1 className=" font-bold font-plus">Dashboard</h1>
         <div className="flex items-center justify-between gap-4">
           <div className="flex items-center gap-2 boreder border-border bg-white rounded-lg p-2 font-inter w-1/2">
@@ -31,7 +31,7 @@ const Header = () => {
         </div>
       </div>
       <div className="bg-line w-full h-px"></div>
-    </>
+    </div>
   );
 };
 

@@ -12,20 +12,22 @@ import setting from "../assets/setting-2.png";
 import logout from "../assets/logout.png";
 const Sidebar = () => {
   return (
-    <div className="p-4  flex flex-col gap-8  bg-white">
-      <img src={logo} alt="logo" className="w-8" />
-      <img src={catergory} alt="logo" className="w-8" />
-      <img src={trend} alt="logo" className="w-8" />
-      <img src={profile} alt="logo" className="w-8" />
-      <img src={box} alt="logo" className="w-8" />
-      <img src={frame} alt="logo" className="w-8" />
-      <img src={info} alt="logo" className="w-8" />
-      <img src={light} alt="logo" className="w-8" />
-      <img src={moon} alt="logo" className="w-8" />
-      <div>
-        <img src={arrowright} alt="logo" className="w-8" />
-        <img src={setting} alt="logo" className="w-8" />
-        <img src={logout} alt="logo" className="w-8" />
+    <div className=" bg-white  p-4 fixed h-full top-0 left-0 bottom-0 z-20">
+      <div className="flex flex-col gap-5 pb-20 pt-2">
+        <img src={logo} alt="logo" className="w-6" />
+        <img src={catergory} alt="logo" className="w-6" />
+        <img src={trend} alt="logo" className="w-6" />
+        <img src={profile} alt="logo" className="w-6" />
+        <img src={box} alt="logo" className="w-6" />
+        <img src={frame} alt="logo" className="w-6" />
+        <img src={info} alt="logo" className="w-6" />
+        <img src={light} alt="logo" className="w-6" />
+        <img src={moon} alt="logo" className="w-6" />
+      </div>
+      <div className="flex flex-col gap-5">
+        <img src={arrowright} alt="logo" className="w-6" />
+        <img src={setting} alt="logo" className="w-6" />
+        <img src={logout} alt="logo" className="w-6" />
       </div>
     </div>
   );

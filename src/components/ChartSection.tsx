@@ -1,5 +1,3 @@
-// MonthlyBarChart.tsx
-
 import React from "react";
 import { Bar } from "react-chartjs-2";
 import {
@@ -85,7 +83,7 @@ const ChartSection: React.FC = () => {
   };
 
   return (
-    <div className="w-1/2 bg-white p-2">
+    <div className=" bg-white p-2">
       <h1>Monthly Data Bar Chart</h1>
       <Bar options={options} data={barChartData} />
     </div>
