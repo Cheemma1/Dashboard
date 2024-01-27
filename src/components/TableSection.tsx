@@ -17,11 +17,11 @@ import doc from "../assets/document-download.svg";
 const TableSection = () => {
   return (
     <div className="my-4 bg-white font-plus">
-      <div className="flex items-center justify-between px-4 py-2">
+      <div className="flex items-center justify-between px-4 py-4">
         <p>Last orders</p>
-        <p>See All</p>
+        <p className="text-green-500">See All</p>
       </div>
-      <Table className="">
+      <Table className="mt-6">
         <TableHeader>
           <TableRow className="text-tableHead">
             <TableHead className="">Name</TableHead>
