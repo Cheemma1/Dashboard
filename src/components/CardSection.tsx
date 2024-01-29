@@ -15,7 +15,7 @@ import img8 from "../assets/3d-rotate.svg";
 const CardSection = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-2 ">
-      <Card className="w-full bg-primary text-primary-foreground">
+      <Card className="w-full bg-card text-card-foreground">
         <CardHeader className="flex flex-row items-center justify-between">
           <img src={img6} alt="" className="w-8" />
           <img src={img5} alt="" className="w-20" />
@@ -32,7 +32,7 @@ const CardSection = () => {
           <p className="text-order2 font-inter text-sm">vs. previous month</p>
         </CardFooter>
       </Card>
-      <Card className="bg-primary text-primary-foreground ">
+      <Card className="bg-card text-card-foreground ">
         <CardHeader className="flex flex-row items-center justify-between">
           <img src={img8} alt="" className="w-8" />
           <img src={img2} alt="" className="w-20" />
@@ -49,7 +49,7 @@ const CardSection = () => {
           <p className="text-order2 font-inter text-sm">vs. previous month</p>
         </CardFooter>
       </Card>
-      <Card className="bg-primary  text-primary-foreground">
+      <Card className="bg-card  text-card-foreground">
         <CardHeader className="flex flex-row items-center justify-between">
           <img src={img7} alt="" className="w-8" />
           <img src={img2} alt="" className="w-20" />
@@ -66,7 +66,7 @@ const CardSection = () => {
           <p className="text-order2 font-inter text-sm">vs. previous month</p>
         </CardFooter>
       </Card>
-      <Card className="bg-primary text-primary-foreground">
+      <Card className="bg-card text-card-foreground">
         <CardHeader className="flex flex-row items-center justify-between">
           <img src={img1} alt="" className="w-8" />
           <img src={img5} alt="" className="w-20" />

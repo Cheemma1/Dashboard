@@ -25,7 +25,7 @@ const Header = () => {
       <div className="py-2 flex items-center justify-between container  mx-auto">
         <h1 className=" font-bold font-plus">Dashboard</h1>
         <div className="flex items-center justify-between gap-4">
-          <div className="flex items-center gap-2 border border-border bg-white rounded-full p-2 font-inter w-1/2">
+          <div className="flex items-center gap-2 border border-border bgb rounded-full p-2 font-inter w-1/2">
             <img src={search} alt="search-icon" />
             <input
               type="text"

@@ -16,7 +16,7 @@ import doc from "../assets/document-download.svg";
 
 const TableSection = () => {
   return (
-    <div className="my-4 bg-white font-plus">
+    <div className="my-4 bg-card text-card-foreground font-plus">
       <div className="flex items-center justify-between px-4 py-4 font-bold">
         <p>Last orders</p>
         <p className="text-green-500">See All</p>

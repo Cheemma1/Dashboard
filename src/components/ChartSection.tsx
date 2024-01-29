@@ -105,7 +105,7 @@ const ChartSection: React.FC = () => {
   };
 
   return (
-    <div className=" bg-white p-2 font-plus">
+    <div className=" bg-card text-card-foreground p-2 font-plus">
       <div className="flex items-center justify-between  mb-16 mt-6">
         <h1 className="font-bold">Sales trend</h1>
         <div className="flex items-center gap-2">
