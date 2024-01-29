@@ -9,6 +9,10 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    fontFamily: {
+      plus: ["Plus Jakarta Sans", "sans-serif"],
+      inter: ["Inter", "sans-serif"],
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -18,21 +22,27 @@ module.exports = {
     },
     extend: {
       colors: {
-        border: "#DADDDD",
-        content: "#E5EAEF",
-        table1: "#3A3F51",
-        neutral: "#737373",
-        tableHead: "#9CA4AB",
-        secondary: "#26282C",
-        tableCell: "#0D062D",
-        clr: "#34CAA51F",
-        order1: "#898989",
-        order2: "#606060",
+        // border: "#DADDDD",
+        // content: "#E5EAEF",
+        // table1: "#3A3F51",
+        // neutral: "#737373",
+        // tableHead: "#9CA4AB",
+        // secondary: "#26282C",
+        // tableCell: "#0D062D",
+        // clr: "#34CAA51F",
+        // order1: "#898989",
+        // order2: "#606060",
+        // ring: " #E1DFDF",
+        line: "#E5EAEF",
+
+        // background: "#FAFAFA",
+        border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "#FAFAFA",
+        background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        line: "#E5EAEF",
+        foreground: "hsl(var(--foreground))",
+
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -57,18 +67,15 @@ module.exports = {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
+
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        fontFamily: {
-          plus: ["Plus Jakarta Sans", "sans-serif"],
-          inter: ["Inter", "sans-serif"],
-        },
       },
       borderRadius: {
         lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
+        md: "6px",
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
