@@ -21,7 +21,7 @@ const TableSection = () => {
         <p>Last orders</p>
         <p className="text-green-500">See All</p>
       </div>
-      <Table className="mt-6">
+      <Table className="mt-6 ">
         <TableHeader>
           <TableRow className="text-tableHead">
             <TableHead className="">Name</TableHead>
@@ -35,7 +35,7 @@ const TableSection = () => {
           <TableRow>
             <TableCell className="flex items-center  gap-2">
               <img src={avatar1} alt="" />{" "}
-              <h2 className="text-table1">Marcus Bergson</h2>
+              <h2 className="text-table1 text-xs">Marcus Bergson</h2>
             </TableCell>
             <TableCell className="text-neutral">16th Nov, 2023</TableCell>
             <TableCell className="text-tableCell">$50,000</TableCell>

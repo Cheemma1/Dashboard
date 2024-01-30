@@ -22,7 +22,7 @@
     --destructive-foreground: 0 0% 98%;
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-
+    --ring: 142.1 76.2% 36.3%;
     --radius: 0.5rem;
   }
 
@@ -45,6 +45,7 @@
     --destructive-foreground: 0 85.7% 97.3%;
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
+    --ring: 142.4 71.8% 29.2%;
   }
 }
 
@@ -55,4 +56,17 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #34caa5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #34caa5;
+  border-radius: 0px;
 }

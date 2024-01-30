@@ -1,6 +1,6 @@
 const Progress = () => {
   return (
-    <div className="bg-card p-4 h-fit mt-4 font-plus">
+    <div className="bg-card p-4 h-fit mt-4 font-plus mb-4 md:mb-0">
       <div className="flex items-center justify-between  font-bold">
         <p>Top Platform</p>
         <p className="text-green-500">See All</p>

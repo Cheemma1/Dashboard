@@ -1,5 +1,6 @@
 import DatePicker from "./DatePicker";
 import {
+  AlignCenter,
   Bell,
   ChevronDown,
   CreditCard,
@@ -19,12 +20,20 @@ import {
 
 import avatar from "../assets/avatar.png";
 import search from "../assets/Icon - Search.png";
+import { useState } from "react";
+import MobNav from "./MobNav";
 const Header = () => {
+  const [open, setOpen] = useState<boolean>(false);
   return (
-    <div className=" ml-10  bg-background fixed w-full top-0  z-10 pr-10">
+    <div className="lg:ml-10  bg-card fixed w-full top-0  md:z-10 md:pr-10">
       <div className="py-2 flex items-center justify-between container  mx-auto">
         <h1 className=" font-bold font-plus">Dashboard</h1>
-        <div className="flex items-center justify-between gap-4">
+        <AlignCenter
+          className="block md:hidden cursor-pointer"
+          onClick={() => setOpen(!open)}
+        />
+        {open && <MobNav />}
+        <div className="hidden md:flex items-center justify-between gap-4">
           <div className="flex items-center gap-2 border border-border bgb rounded-full p-2 font-inter w-1/2">
             <img src={search} alt="search-icon" />
             <input
@@ -54,8 +63,7 @@ const Header = () => {
             <DropdownMenuContent>
               <DropdownMenuLabel>
                 <div>
-                  <h3 className="text-sm font-inter">Julius Berger</h3>
-                  <p className="text-xs font-inter">Julius@gmail.com</p>
+                  <h3 className="text-sm font-inter">My Account</h3>
                 </div>
               </DropdownMenuLabel>
               <DropdownMenuSeparator />

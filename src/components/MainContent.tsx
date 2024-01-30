@@ -5,13 +5,15 @@ import TableSection from "./TableSection";
 
 const MainContent = () => {
   return (
-    <div className="container  mt-20 max-h-full overflow-y-scroll lg:ml-10  grid  grid-cols-1 md:grid-cols-2 gap-4">
-      <ChartSection />
-      <CardSection />
+    <div className="container  pt-4  mt-20 max-h-full overflow-y-scroll md:ml-10 md:pr-12">
+      <div className="grid  grid-cols-1 xl:grid-cols-2 gap-4">
+        <ChartSection />
+        <CardSection />
 
-      <TableSection />
+        <TableSection />
 
-      <Progress />
+        <Progress />
+      </div>
     </div>
   );
 };

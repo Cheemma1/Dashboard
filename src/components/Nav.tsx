@@ -27,13 +27,13 @@ const Nav = () => {
         <img
           src={light}
           alt="logo"
-          className="w-6"
+          className="w-6 cursor-pointer"
           onClick={() => setTheme("light")}
         />
         <img
           src={moon}
           alt="logo"
-          className="w-6"
+          className="w-6 cursor-pointer"
           onClick={() => setTheme("dark")}
         />
       </div>
