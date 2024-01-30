@@ -70,10 +70,8 @@ const ChartSection: React.FC = () => {
             chartArea.bottom
           );
 
-          gradient.addColorStop(0, "rgba(52, 202, 165, 0.8)");
-          gradient.addColorStop(1, "rgba(52, 202, 165, 0)");
-          gradient.addColorStop(1, "rgba(52, 202, 165, 0)");
-
+          gradient.addColorStop(0, "#34CAA5"); // Start with #34CAA5 at 0%
+          gradient.addColorStop(1, "rgba(52, 202, 165, 0.20)");
           return gradient;
         },
         borderRadius: 20,
@@ -106,12 +104,12 @@ const ChartSection: React.FC = () => {
 
   return (
     <div className=" bg-card text-card-foreground p-2 font-plus">
-      <div className="flex items-center justify-between  mb-16 mt-6">
-        <h1 className="font-bold">Sales trend</h1>
+      <div className="flex items-center justify-between gap-2  mb-16 mt-6">
+        <h1 className="font-bold text-xs md:text-sm">Sales trend</h1>
         <div className="flex items-center gap-2">
-          <h4 className="font-bold">Sort by:</h4>
+          <h4 className="font-bold text-xs md:text-sm">Sort by:</h4>
           <Select>
-            <SelectTrigger className="w-[150px] border border-border rounded-full">
+            <SelectTrigger className="w-[150px] border border-border rounded-full text-xs md:text-sm">
               <SelectValue placeholder="Weekly " />
             </SelectTrigger>
             <SelectContent>

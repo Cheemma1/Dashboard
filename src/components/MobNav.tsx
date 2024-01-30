@@ -1,8 +1,15 @@
+import { X } from "lucide-react";
 import Nav from "./Nav";
 
-const MobNav = () => {
+interface NavMobileProps {
+  open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const MobNav = ({ open, setOpen }: NavMobileProps) => {
   return (
-    <div className=" bg-secondary top-0 right-0 fixed h-screen p-4">
+    <div className=" bg-card top-0 right-0 fixed h-screen p-4">
+      <X onClick={() => setOpen(!open)} className="cursor-pointer my-2" />
       <Nav />
     </div>
   );

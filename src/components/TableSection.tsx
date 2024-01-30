@@ -25,7 +25,7 @@ const TableSection = () => {
         <TableHeader>
           <TableRow className="text-tableHead">
             <TableHead className="">Name</TableHead>
-            <TableHead>Date</TableHead>
+            <TableHead className="">Date</TableHead>
             <TableHead>Amount</TableHead>
             <TableHead>Status</TableHead>
             <TableHead>Invoice</TableHead>
@@ -34,11 +34,16 @@ const TableSection = () => {
         <TableBody>
           <TableRow>
             <TableCell className="flex items-center  gap-2">
-              <img src={avatar1} alt="" />{" "}
-              <h2 className="text-table1 text-xs">Marcus Bergson</h2>
+              <img src={avatar1} alt="" />
+              <h2 className="text-table1  w-[140px] md:w[400px]">
+                Marcus Bergson
+              </h2>
             </TableCell>
-            <TableCell className="text-neutral">16th Nov, 2023</TableCell>
-            <TableCell className="text-tableCell">$50,000</TableCell>
+            <TableCell className="text-neutral  ">
+              {" "}
+              <p className="w-[100px]">16th Nov, 2023</p>
+            </TableCell>
+            <TableCell className="text-tableCell ">$50,000</TableCell>
             <TableCell className="text-green-500">paid</TableCell>
             <TableCell className="flex items-center  justify-center gap-1">
               <img src={doc} alt="" /> <p className="text-tableCell">view</p>

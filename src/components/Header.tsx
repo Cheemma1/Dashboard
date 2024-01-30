@@ -32,7 +32,7 @@ const Header = () => {
           className="block md:hidden cursor-pointer"
           onClick={() => setOpen(!open)}
         />
-        {open && <MobNav />}
+        {open && <MobNav open={open} setOpen={setOpen} />}
         <div className="hidden md:flex items-center justify-between gap-4">
           <div className="flex items-center gap-2 border border-border bgb rounded-full p-2 font-inter w-1/2">
             <img src={search} alt="search-icon" />
