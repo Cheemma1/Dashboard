@@ -54,7 +54,7 @@ const ChartSection: React.FC = () => {
           15000, 45000,
         ],
 
-        backgroundColor: " rgba(52, 202, 165, 0.10)",
+        backgroundColor: " rgba(52, 202, 165, 0.30)",
         hoverBackgroundColor: (context: any) => {
           const chart = context.chart;
           const { ctx, chartArea } = chart;
